@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import lovedaily from "../../assets/lovedaily.webp";
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import { ArrowUpRight } from 'lucide-react';
 import about from "../../assets/about2.webp";
 import team1 from "../../assets/team/team1.webp";
 import team2 from "../../assets/team/team2.webp";
@@ -23,8 +22,8 @@ import './about.css'
 
 export default function About() {
     const navigate = useNavigate();
-    const [activeStep, setActiveStep] = useState(0);
-    const observerRef = useRef(null);
+   
+
     const images = [
         { id: 1, src: image1, alt: 'Burger' },
         { id: 2, src: image2, alt: 'Milkshake' },
@@ -37,31 +36,7 @@ export default function About() {
         { id: 9, src: image9, alt: 'Fries standing' }
     ];
 
-    useEffect(() => {
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5
-        };
-
-        observerRef.current = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const index = parseInt(entry.target.getAttribute('data-step'), 10);
-                    setActiveStep(index);
-                }
-            });
-        }, options);
-
-        const stepElements = document.querySelectorAll('.step-item');
-        stepElements.forEach((el) => observerRef.current.observe(el));
-
-        return () => {
-            if (observerRef.current) {
-                observerRef.current.disconnect();
-            }
-        };
-    }, []);
+  
     return (
         <>
            <div className="grid grid-cols-12 items-start gap-6 p-6 pt-16 md:pt-16">
