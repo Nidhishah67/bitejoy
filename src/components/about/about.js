@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import lovedaily from "../../assets/lovedaily.webp";
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import about from "../../assets/about2.webp";
 import team1 from "../../assets/team/team1.webp";
 import team2 from "../../assets/team/team2.webp";
@@ -59,7 +60,7 @@ export default function About() {
         <button onClick={() => { navigate('/contact'); window.scrollTo(0, 0); }} className="mt-4 w-44 h-16 text-lg bg-pink-500 text-black font-bold border-2 border-black rounded-full border-b-4 border-r-4 flex items-center justify-center gap-2 hover:border-b-2 hover:border-r-2">
             CONTACT US
             <div className="bg-white-500 rounded-full p-1 flex items-center justify-center border-4 border-black-500">
-               <LinkrrowUpRight className="w-4 h-4" />
+               <ArrowUpRight className="w-4 h-4" />
             </div>
         </button>
     </div>
