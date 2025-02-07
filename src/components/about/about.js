@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React  from 'react';
 import lovedaily from "../../assets/lovedaily.webp";
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { ArrowUpRight } from 'lucide-react';
