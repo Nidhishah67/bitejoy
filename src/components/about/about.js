@@ -138,7 +138,7 @@ export default function About() {
                     <button onClick={() => { navigate('/menu'); window.scrollTo(0, 0); }} className="mt-4 w-44 h-16 text-lg bg-pink-500 text-black font-bold border-2 border-black rounded-full border-b-4 border-r-4 flex items-center justify-center gap-2 hover:border-b-2 hover:border-r-2">
                         OUR MENU
                         <div className="bg-white-500 rounded-full p-1 flex items-center justify-center border-4 border-black-500">
-                           <LinkrrowUpRight className="w-4 h-4" />
+                           <ArrowUpRight className="w-4 h-4" />
                         </div>
                     </button>
                 </div>
@@ -167,7 +167,7 @@ export default function About() {
                     <button onClick={() => { navigate('/menu'); window.scrollTo(0, 0); }} className="mt-4 w-44 h-16 text-lg bg-pink-500 text-black font-bold border-2 border-black rounded-full border-b-4 border-r-4 flex items-center justify-center gap-2 hover:border-b-2 hover:border-r-2">
                         OUR MENU
                         <div className="bg-white-500 rounded-full p-1 flex items-center justify-center border-4 border-black-500">
-                           <LinkrrowUpRight className="w-4 h-4" />
+                           <ArrowUpRight className="w-4 h-4" />
                         </div>
                     </button>
                 </div>
