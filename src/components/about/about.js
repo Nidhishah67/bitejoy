@@ -19,6 +19,7 @@ import image7 from "../../assets/hero/heroimage7.webp";
 import image8 from "../../assets/hero/heroimage8.webp";
 import image9 from "../../assets/hero/heroimage9.webp";
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import './about.css'
 
 export default function About() {
